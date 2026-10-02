@@ -12,6 +12,15 @@
   @media (prefers-color-scheme: light){
     :root{ --bg:#F7F3EC; --fg:#1A1410; --muted:#6B6256; --accent:#B14A33; --line:#E2D9CA; }
   }
+  .teaser{
+    display:inline-block; margin:0 0 32px; padding:10px 18px;
+    border:1px solid var(--line); border-radius:999px;
+    background:rgba(200,85,61,.08); color:var(--fg); font-size:16px; font-weight:500;
+  }
+  .teaser .punkt{
+    display:inline-block; width:8px; height:8px; border-radius:50%;
+    background:var(--accent); margin-right:9px; vertical-align:middle;
+  }
   *{box-sizing:border-box}
   body{
     margin:0; background:var(--bg); color:var(--fg); min-height:100vh;
@@ -50,6 +59,8 @@
 
   <p>A focus timer based on the Pomodoro method: timer and stopwatch, tasks with estimates,
   statistics for the day, week and month — and a plant that keeps growing as long as you stay with it.</p>
+
+  <p class="teaser"><span class="punkt"></span>Coming soon to Google Play — free and ad-free</p>
 
   <ul class="merkmale">
     <li>No ads</li>
