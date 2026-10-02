@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Datenschutzerklärung – Taktwerk</title>
+<style>
+  :root{
+    --bg:#1A1410; --fg:#F3EDE1; --muted:#A79C8E; --accent:#C8553D; --line:#33291F;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#F7F3EC; --fg:#1A1410; --muted:#6B6256; --accent:#B14A33; --line:#E2D9CA; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.65; font-size:17px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:56px 20px 96px}
+  header{display:flex; align-items:center; gap:16px; margin-bottom:40px}
+  h1{font-size:28px; line-height:1.25; margin:0 0 6px; letter-spacing:-0.01em}
+  .stand{color:var(--muted); font-size:15px; margin:0}
+  h2{font-size:20px; margin:40px 0 10px; letter-spacing:-0.01em}
+  p,li{color:var(--fg)}
+  .lead{font-size:19px}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  .kasten{
+    border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:10px; padding:16px 18px; margin:24px 0; background:rgba(200,85,61,.06);
+  }
+  .kasten p{margin:0}
+  table{border-collapse:collapse; width:100%; margin:14px 0; font-size:16px}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--muted); font-weight:600}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:15px}
+  code{background:rgba(127,127,127,.15); padding:1px 5px; border-radius:4px; font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <svg width="56" height="56" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width="10" stroke-dasharray="10.2 10.2"/>
+    <circle cx="50" cy="50" r="32" fill="none" stroke="currentColor" stroke-width="3"/>
+    <polyline points="31,50 41,50 46.5,37 54,63 59,50 69,50" fill="none" stroke="#C8553D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <div>
+    <h1>Datenschutzerklärung</h1>
+    <p class="stand">Taktwerk – Fokus-Timer · Stand: <!-- DATUM -->Oktober 2026</p>
+  </div>
+</header>
+
+<p class="lead"><strong>Taktwerk erhebt keine personenbezogenen Daten.</strong> Die App funktioniert
+vollständig auf deinem Gerät, ohne Benutzerkonto, ohne Server und ohne Internetverbindung.</p>
+
+<h2>1. Verantwortlicher</h2>
+<p>
+  Harald Müller<br>
+  Adalbertstraße 56<br>
+  80799 München<br>
+  E-Mail: <a href="mailto:apps@stimutonic.de">apps@stimutonic.de</a>
+</p>
+
+<h2>2. Welche Daten verarbeitet die App?</h2>
+<p><strong>Keine.</strong> Taktwerk sendet keine Daten an uns oder an Dritte. Es gibt kein Benutzerkonto,
+keine Registrierung, keine Analyse- oder Absturzberichte, keine Werbung und keine Werbe-ID.</p>
+
+<p>Alles, was du in der App anlegst, bleibt <strong>ausschließlich auf deinem Gerät</strong>:</p>
+<ul>
+  <li>deine Timer-Einstellungen (Dauern, Automatik, Klang, Design),</li>
+  <li>deine Aufgaben und deren Schätzungen,</li>
+  <li>deine Sitzungs- und Statistikdaten (abgeschlossene und abgebrochene Einheiten, Serie, Tagesziel),</li>
+  <li>der Zustand deiner Fokus-Pflanze.</li>
+</ul>
+<p>Technisch liegen diese Angaben im lokalen Speicher der App (<code>shared_preferences</code>). Löschst du
+die App, werden sie mit entfernt.</p>
+
+<h2>3. Berechtigungen und wofür sie gebraucht werden</h2>
+<table>
+  <tr><th>Berechtigung</th><th>Zweck</th></tr>
+  <tr>
+    <td>Benachrichtigungen<br><code>POST_NOTIFICATIONS</code></td>
+    <td>Hinweis, wenn eine Fokus- oder Pausenphase endet. Ohne diese Berechtigung läuft die App,
+        du bekommst nur keine Meldung.</td>
+  </tr>
+  <tr>
+    <td>Exakte Weckzeiten<br><code>USE_EXACT_ALARM</code>, <code>SCHEDULE_EXACT_ALARM</code></td>
+    <td>Damit das Phasenende <em>pünktlich</em> gemeldet wird, auch wenn das Gerät gerade spart.
+        Bei einem Timer ist die Genauigkeit der Zweck der Anwendung.</td>
+  </tr>
+</table>
+<p>Keine dieser Berechtigungen überträgt Daten. Taktwerk fordert <strong>keinen</strong> Zugriff auf
+Standort, Kontakte, Kamera, Mikrofon, Dateien oder Telefonstatus an.</p>
+
+<h2>4. Datensicherung (Export und Import)</h2>
+<p>Du kannst deine Daten als Datei exportieren und wieder einlesen. Diese Datei erzeugst
+<strong>du</strong>; sie wird nirgendwohin übertragen. Wohin du sie speicherst oder ob du sie weitergibst,
+entscheidest allein du.</p>
+
+<h2>5. Weitergabe an Dritte</h2>
+<p>Es findet keine Weitergabe statt. Es sind keine Analysedienste, keine Werbenetzwerke, keine
+Absturzberichterstattung und keine sonstigen Fremdbibliotheken eingebunden, die Daten senden.</p>
+
+<h2>6. Bezug über Google Play</h2>
+<p>Lädst du Taktwerk über Google Play, verarbeitet <strong>Google</strong> im Rahmen des Downloads und der
+Kontoverwaltung eigene Daten — darauf haben wir keinen Einfluss und erhalten davon keine Kenntnis. Es gelten
+die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzbestimmungen von Google</a>.</p>
+
+<h2>7. Deine Rechte</h2>
+<p>Nach der Datenschutz-Grundverordnung hast du Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung
+der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da wir <strong>keine</strong> Daten über dich
+speichern, liegen uns dazu keine Informationen vor — es gibt nichts, worüber wir Auskunft erteilen oder was
+wir löschen könnten. Deine Daten löschst du, indem du die App deinstallierst oder die Daten in der App
+zurücksetzt.</p>
+<p>Unabhängig davon steht dir ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu.</p>
+
+<h2>8. Änderungen</h2>
+<p>Sollte eine künftige Version Daten verarbeiten — etwa eine optionale Synchronisierung zwischen Geräten —,
+wird diese Erklärung vorher angepasst und die Funktion bleibt freiwillig.</p>
+
+<footer>
+  Taktwerk – Fokus-Timer · Diese Erklärung gilt für die Android-App und die Web-Version.
+</footer>
+
+</div>
+</body>
+</html>
