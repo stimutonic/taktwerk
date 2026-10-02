@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Taktwerk – Fokus-Timer</title>
-<meta name="description" content="Taktwerk ist ein Fokus-Timer nach der Pomodoro-Methode. Ohne Konto, ohne Werbung, alles bleibt auf dem Gerät.">
-<link rel="alternate" hreflang="de" href="index.html">
-<link rel="alternate" hreflang="en" href="en/index.html">
+<title>Taktwerk – Focus Timer</title>
+<meta name="description" content="Taktwerk is a focus timer based on the Pomodoro method. No account, no ads, everything stays on your device.">
+<link rel="alternate" hreflang="de" href="../index.html">
+<link rel="alternate" hreflang="en" href="index.html">
 <style>
   :root{ --bg:#1A1410; --fg:#F3EDE1; --muted:#A79C8E; --accent:#C8553D; --line:#33291F; }
   @media (prefers-color-scheme: light){
     :root{ --bg:#F7F3EC; --fg:#1A1410; --muted:#6B6256; --accent:#B14A33; --line:#E2D9CA; }
   }
-  .sprache{font-size:15px; color:var(--muted); margin:0 0 28px}
-  .sprache a{color:var(--accent); text-decoration:none}
-  .sprache .aktiv{color:var(--fg); font-weight:600}
   *{box-sizing:border-box}
   body{
     margin:0; background:var(--bg); color:var(--fg); min-height:100vh;
@@ -23,6 +20,9 @@
     display:flex; align-items:center; justify-content:center;
   }
   .wrap{max-width:560px; padding:48px 20px; text-align:center}
+  .sprache{margin-bottom:28px; font-size:15px; color:var(--muted)}
+  .sprache a{color:var(--accent); text-decoration:none}
+  .sprache .aktiv{color:var(--fg); font-weight:600}
   svg{display:block; margin:0 auto 28px}
   h1{font-size:40px; margin:0 0 4px; letter-spacing:-.02em}
   h1 .takt{color:var(--accent)}
@@ -37,9 +37,8 @@
 <body>
 <div class="wrap">
 
-  <p class="sprache"><span class="aktiv">Deutsch</span> · <a href="en/index.html">English</a></p>
+  <p class="sprache"><a href="../index.html">Deutsch</a> · <span class="aktiv">English</span></p>
 
-  
   <svg width="112" height="112" viewBox="0 0 100 100" aria-hidden="true">
     <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width="10" stroke-dasharray="10.2 10.2"/>
     <circle cx="50" cy="50" r="32" fill="none" stroke="currentColor" stroke-width="3"/>
@@ -47,19 +46,19 @@
   </svg>
 
   <h1>Takt<span class="takt">werk</span></h1>
-  <p class="claim">Konzentriert arbeiten. Ohne Schnickschnack.</p>
+  <p class="claim">Focused work. Nothing in the way.</p>
 
-  <p>Ein Fokus-Timer nach der Pomodoro-Methode: Timer und Stoppuhr, Aufgaben mit Schätzung,
-  Statistik für Tag, Woche und Monat — und eine Pflanze, die mitwächst, solange du dranbleibst.</p>
+  <p>A focus timer based on the Pomodoro method: timer and stopwatch, tasks with estimates,
+  statistics for the day, week and month — and a plant that keeps growing as long as you stay with it.</p>
 
   <ul class="merkmale">
-    <li>Keine Werbung</li>
-    <li>Kein Konto</li>
-    <li>Alles bleibt auf dem Gerät</li>
+    <li>No ads</li>
+    <li>No account</li>
+    <li>Everything stays on your device</li>
   </ul>
 
   <footer>
-    <a href="datenschutz.html">Datenschutzerklärung</a>
+    <a href="privacy.html">Privacy Policy</a>
   </footer>
 
 </div>

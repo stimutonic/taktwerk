@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy – Taktwerk</title>
+<link rel="alternate" hreflang="de" href="../datenschutz.html">
+<link rel="alternate" hreflang="en" href="privacy.html">
+<style>
+  :root{
+    --bg:#1A1410; --fg:#F3EDE1; --muted:#A79C8E; --accent:#C8553D; --line:#33291F;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#F7F3EC; --fg:#1A1410; --muted:#6B6256; --accent:#B14A33; --line:#E2D9CA; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.65; font-size:17px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:56px 20px 96px}
+  .sprache{font-size:15px; color:var(--muted); margin:0 0 28px}
+  .sprache a{color:var(--accent); text-decoration:none}
+  .sprache .aktiv{color:var(--fg); font-weight:600}
+  header{display:flex; align-items:center; gap:16px; margin-bottom:40px}
+  h1{font-size:28px; line-height:1.25; margin:0 0 6px; letter-spacing:-0.01em}
+  .stand{color:var(--muted); font-size:15px; margin:0}
+  h2{font-size:20px; margin:40px 0 10px; letter-spacing:-0.01em}
+  p,li{color:var(--fg)}
+  .lead{font-size:19px}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  .hinweis{
+    border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:10px; padding:14px 16px; margin:24px 0; background:rgba(200,85,61,.06);
+    font-size:16px;
+  }
+  .hinweis p{margin:0}
+  table{border-collapse:collapse; width:100%; margin:14px 0; font-size:16px}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--muted); font-weight:600}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:15px}
+  code{background:rgba(127,127,127,.15); padding:1px 5px; border-radius:4px; font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="sprache"><a href="../datenschutz.html">Deutsch</a> · <span class="aktiv">English</span></p>
+
+<header>
+  <svg width="56" height="56" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width="10" stroke-dasharray="10.2 10.2"/>
+    <circle cx="50" cy="50" r="32" fill="none" stroke="currentColor" stroke-width="3"/>
+    <polyline points="31,50 41,50 46.5,37 54,63 59,50 69,50" fill="none" stroke="#C8553D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <div>
+    <h1>Privacy Policy</h1>
+    <p class="stand">Taktwerk – Focus Timer · Last updated: October 2026</p>
+  </div>
+</header>
+
+<div class="hinweis">
+  <p>This is a translation for your convenience. The
+  <a href="../datenschutz.html">German version</a> is the legally binding one.</p>
+</div>
+
+<p class="lead"><strong>Taktwerk does not collect any personal data.</strong> The app runs entirely on
+your device — no user account, no server, no internet connection required.</p>
+
+<h2>1. Controller</h2>
+<p>
+  Harald Müller<br>
+  Adalbertstraße 56<br>
+  80799 Munich, Germany<br>
+  Email: <a href="mailto:apps@stimutonic.de">apps@stimutonic.de</a>
+</p>
+
+<h2>2. What data does the app process?</h2>
+<p><strong>None.</strong> Taktwerk sends no data to us or to third parties. There is no user account, no
+registration, no analytics, no crash reporting, no advertising and no advertising ID.</p>
+
+<p>Everything you create in the app stays <strong>on your device only</strong>:</p>
+<ul>
+  <li>your timer settings (durations, automation, sound, theme),</li>
+  <li>your tasks and their estimates,</li>
+  <li>your session and statistics data (completed and cancelled sessions, streak, daily goal),</li>
+  <li>the state of your focus plant.</li>
+</ul>
+<p>Technically this is stored in the app's local storage (<code>shared_preferences</code>). If you delete
+the app, it is removed with it.</p>
+
+<h2>3. Permissions and why they are needed</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr>
+    <td>Notifications<br><code>POST_NOTIFICATIONS</code></td>
+    <td>To tell you when a focus or break phase ends. Without it the app still works — you simply get
+        no notification.</td>
+  </tr>
+  <tr>
+    <td>Exact alarms<br><code>USE_EXACT_ALARM</code>, <code>SCHEDULE_EXACT_ALARM</code></td>
+    <td>So the end of a phase is announced <em>on time</em>, even while the device is saving power.
+        For a timer, accuracy is the purpose of the app.</td>
+  </tr>
+</table>
+<p>None of these permissions transmit data. Taktwerk requests <strong>no</strong> access to location,
+contacts, camera, microphone, files or phone state.</p>
+
+<h2>4. Backup (export and import)</h2>
+<p>You can export your data to a file and read it back in. <strong>You</strong> create that file; it is not
+transmitted anywhere. Where you store it, and whether you share it, is entirely up to you.</p>
+
+<h2>5. Sharing with third parties</h2>
+<p>No data is shared. No analytics services, advertising networks, crash reporting or other third-party
+libraries that transmit data are included.</p>
+
+<h2>6. Distribution via Google Play</h2>
+<p>If you download Taktwerk from Google Play, <strong>Google</strong> processes its own data as part of the
+download and account handling. We have no influence over this and receive no information about it.
+Google's <a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a> applies.</p>
+
+<h2>7. Your rights</h2>
+<p>Under the General Data Protection Regulation you have the right to access, rectification, erasure,
+restriction of processing, data portability and objection. Since we store <strong>no</strong> data about
+you, we hold no information to disclose and nothing to erase. You delete your data by uninstalling the app
+or resetting the data within it.</p>
+<p>You also have the right to lodge a complaint with a data protection supervisory authority.</p>
+
+<h2>8. Changes</h2>
+<p>Should a future version process data — for example an optional synchronisation between devices — this
+policy will be updated beforehand and the feature will remain voluntary.</p>
+
+<footer>
+  Taktwerk – Focus Timer · This policy applies to the Android app and the web version.
+</footer>
+
+</div>
+</body>
+</html>
