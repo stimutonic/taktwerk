@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taktwerk – Manual</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #14120f; color: #ece7df;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { text-align: center; margin-bottom: 8px; }
+  h1 { font-size: 30px; margin: 0; letter-spacing: 0.5px; }
+  .sub { color: #a49d90; margin-top: 4px; }
+  nav { margin: 24px 0; padding: 16px; background: #1d1a15; border-radius: 12px; }
+  nav a { color: #e8a95a; text-decoration: none; display: inline-block; margin: 3px 12px 3px 0; }
+  nav a:hover { text-decoration: underline; }
+  h2 { font-size: 21px; margin: 34px 0 10px; border-bottom: 1px solid #2c281f; padding-bottom: 6px; }
+  h3 { font-size: 16px; margin: 18px 0 6px; color: #e8c98a; }
+  p, li { color: #d9d3c8; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  code, kbd { background: #26221b; padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+  .card { background: #1d1a15; border: 1px solid #2c281f; border-radius: 12px; padding: 14px 18px; margin: 12px 0; }
+  .tip { border-left: 3px solid #6fae7d; }
+  footer { margin-top: 48px; color: #8a8577; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Taktwerk</h1>
+    <div class="sub">Focused work with the Pomodoro technique – Manual</div>
+  </header>
+
+  <nav>
+    <strong>Contents:</strong>
+    <a href="#idea">Idea</a>
+    <a href="#timer">Timer</a>
+    <a href="#plant">Focus plant</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#stats">Stats &amp; streak</a>
+    <a href="#settings">Settings</a>
+    <a href="#platforms">Web &amp; desktop</a>
+    <a href="#tips">Tips</a>
+  </nav>
+
+  <h2 id="idea">Idea</h2>
+  <p>Taktwerk combines a Pomodoro timer with a simple task list. You work in
+     focus blocks (25 minutes by default) with short breaks in between. After a
+     few rounds you get a longer break. The goal is concentrated,
+     distraction-free work – no account required, all data stays locally on your
+     device.</p>
+
+  <h2 id="timer">The timer</h2>
+  <p>The home screen shows the current phase (<em>Focus</em>, <em>Short break</em>
+     or <em>Long break</em>), the remaining time and the progress ring.</p>
+  <h3>Controls</h3>
+  <ul>
+    <li><strong>Start / Pause</strong> – the large button in the centre.</li>
+    <li><strong>Reset</strong> – left button, resets the current phase to its full length.</li>
+    <li><strong>Skip</strong> – right button, jumps straight to the next phase.</li>
+  </ul>
+  <h3>Pauses during focus</h3>
+  <p>You may pause a focus session at most <strong>twice</strong>. The first
+     pause shows a hint; after that no further pause is possible – this keeps you
+     in flow.</p>
+  <h3>Overtime during a break</h3>
+  <p>If you don't start a break, a red <strong>overtime</strong> counter begins
+     after 10 seconds – a gentle nudge to carry on.</p>
+  <h3>Accurate time in the background</h3>
+  <p>The remaining time is derived from the real clock. If you switch tabs or
+     lock your device, the time is still correct when you return – a due phase
+     change is caught up.</p>
+
+  <h2 id="plant">The focus plant</h2>
+  <p>During focus a plant grows in the centre – the further the session, the
+     bigger it gets. If you leave the app or tab during focus the timer keeps
+     <strong>running</strong> (you lose no time) – as a gentle hint the plant just
+     fades a little. Cancelling focus with reset, however, makes it
+     <strong>wilt</strong>. Completing a full focus turns it lush green again.
+     Choose the plant type (meadow, flower, sapling) in the settings.</p>
+
+  <h2 id="tasks">Tasks</h2>
+  <ul>
+    <li>In the <strong>Tasks</strong> tab, add tasks and estimate how many
+        pomodoros they need.</li>
+    <li>Tap the task line above the timer to pick the <strong>active task</strong>.
+        Completed focus blocks are credited to it.</li>
+    <li>Finished tasks can be checked off (circle on the left).</li>
+    <li><strong>Delete:</strong> via the <strong>⋯ menu</strong> on the right of a
+        task (also holds “Edit”) or by <strong>swiping left</strong>.</li>
+  </ul>
+
+  <h2 id="stats">Stats, daily goal &amp; streak</h2>
+  <p>The <strong>Stats</strong> tab shows today's and this week's pomodoros and
+     focus time, plus a bar chart of the last 7 days.</p>
+  <h3>Daily goal</h3>
+  <p>Set how many pomodoros you want to complete per day in the settings
+     (default 8). The progress <code>done / goal</code> is shown at the top of
+     the stats.</p>
+  <h3>Streak</h3>
+  <p>The <strong>streak</strong> counts consecutive days on which you reached
+     your daily goal. If today's goal is still open, the streak stays active
+     until the end of the day (grace period). A day without reaching the goal
+     resets the streak.</p>
+
+  <h2 id="settings">Settings</h2>
+  <ul>
+    <li><strong>Duration</strong> – length of focus, short and long break, and
+        after how many rounds the long break comes.</li>
+    <li><strong>Daily goal</strong> – target pomodoros per day for the streak.</li>
+    <li><strong>Appearance</strong> – theme, light/dark/system, language.</li>
+    <li><strong>Focus plant</strong> – meadow, flower or sapling.</li>
+    <li><strong>Automation</strong> – auto-start breaks or focus.</li>
+    <li><strong>Notifications</strong> – alert on every phase change (in the
+        browser after permission).</li>
+  </ul>
+
+  <h2 id="platforms">Web &amp; desktop version</h2>
+  <p>Besides the Android app, Taktwerk is also available as a <strong>web
+     app</strong> – same features, right in the browser, no app store needed.
+     After the first visit it also works offline.</p>
+  <ul>
+    <li><strong>Use in the browser:</strong> open the Taktwerk web address –
+        that's it, no installation required.</li>
+    <li><strong>Install as a desktop app:</strong> in Chrome or Edge, click the
+        install icon on the right of the address bar (or menu ⋮ →
+        “Install Taktwerk”). The app gets its own window and a start-menu entry.
+        Firefox on desktop doesn't offer installation – there Taktwerk simply
+        runs in a tab.</li>
+    <li><strong>On your phone from the browser:</strong> Chrome → menu ⋮ →
+        “Install app”; Firefox → “Add to home screen”; iPhone/iPad: Safari →
+        Share → “Add to Home Screen”.</li>
+  </ul>
+  <p><strong>Note:</strong> your data stays local <em>on each device</em> – the
+     web and Android versions don't share anything automatically. Use backup
+     export/import in the settings to move data over.</p>
+
+  <h2 id="tips">Tips</h2>
+  <div class="card tip">
+    <ul>
+      <li>Pick a task before starting – so you know what you're working on.</li>
+      <li>Enable “Keep screen on” so the lock screen won't interrupt your focus.</li>
+      <li>Adapt the durations to your task – 25/5 is only the starting point.</li>
+      <li>A realistic daily goal keeps the streak alive and motivates you.</li>
+    </ul>
+  </div>
+
+  <footer>Taktwerk · All data stays locally on your device.</footer>
+</div>
+</body>
+</html>

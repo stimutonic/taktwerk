@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taktwerk – Handbuch</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #14120f; color: #ece7df;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { text-align: center; margin-bottom: 8px; }
+  h1 { font-size: 30px; margin: 0; letter-spacing: 0.5px; }
+  .sub { color: #a49d90; margin-top: 4px; }
+  nav { margin: 24px 0; padding: 16px; background: #1d1a15; border-radius: 12px; }
+  nav a { color: #e8a95a; text-decoration: none; display: inline-block; margin: 3px 12px 3px 0; }
+  nav a:hover { text-decoration: underline; }
+  h2 { font-size: 21px; margin: 34px 0 10px; border-bottom: 1px solid #2c281f; padding-bottom: 6px; }
+  h3 { font-size: 16px; margin: 18px 0 6px; color: #e8c98a; }
+  p, li { color: #d9d3c8; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  code, kbd { background: #26221b; padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+  .card { background: #1d1a15; border: 1px solid #2c281f; border-radius: 12px; padding: 14px 18px; margin: 12px 0; }
+  .tip { border-left: 3px solid #6fae7d; }
+  footer { margin-top: 48px; color: #8a8577; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Taktwerk</h1>
+    <div class="sub">Fokussiert arbeiten mit der Pomodoro-Technik – Handbuch</div>
+  </header>
+
+  <nav>
+    <strong>Inhalt:</strong>
+    <a href="#idee">Idee</a>
+    <a href="#timer">Timer</a>
+    <a href="#pflanze">Fokus-Pflanze</a>
+    <a href="#aufgaben">Aufgaben</a>
+    <a href="#statistik">Statistik &amp; Serie</a>
+    <a href="#einstellungen">Einstellungen</a>
+    <a href="#plattformen">Web &amp; Desktop</a>
+    <a href="#tipps">Tipps</a>
+  </nav>
+
+  <h2 id="idee">Idee</h2>
+  <p>Taktwerk verbindet einen Pomodoro-Timer mit einer einfachen Aufgabenliste.
+     Du arbeitest in Fokus-Blöcken (Standard 25 Minuten) und machst dazwischen
+     kurze Pausen. Nach mehreren Runden folgt eine längere Pause. Ziel ist
+     konzentriertes, ablenkungsarmes Arbeiten – ohne Konto-Zwang, alle Daten
+     bleiben lokal auf deinem Gerät.</p>
+
+  <h2 id="timer">Der Timer</h2>
+  <p>Der Startbildschirm zeigt die aktuelle Phase (<em>Fokus</em>, <em>Kurze
+     Pause</em> oder <em>Lange Pause</em>), die verbleibende Zeit und den
+     Fortschritt als Ring.</p>
+  <h3>Bedienung</h3>
+  <ul>
+    <li><strong>Start / Pause</strong> – großer Knopf in der Mitte.</li>
+    <li><strong>Zurücksetzen</strong> – linker Knopf, stellt die aktuelle Phase auf die volle Dauer zurück.</li>
+    <li><strong>Überspringen</strong> – rechter Knopf, wechselt sofort zur nächsten Phase.</li>
+  </ul>
+  <h3>Pausen im Fokus</h3>
+  <p>Im Fokus sind maximal <strong>zwei</strong> Pausen erlaubt. Bei der ersten
+     Pause erscheint ein Hinweis; danach ist keine weitere möglich – das hält
+     dich im Fluss.</p>
+  <h3>Überzeit in der Pause</h3>
+  <p>Trittst du eine Pause nicht an, beginnt nach 10 Sekunden eine rote
+     <strong>Überzeit</strong>-Anzeige zu zählen – als sanfter Anstoß,
+     weiterzumachen.</p>
+  <h3>Genaue Zeit im Hintergrund</h3>
+  <p>Die Restzeit wird aus der realen Uhrzeit berechnet. Wechselst du den Tab
+     oder sperrst das Gerät, stimmt die Zeit beim Zurückkehren weiterhin – ein
+     fälliger Phasenwechsel wird nachgeholt.</p>
+
+  <h2 id="pflanze">Die Fokus-Pflanze</h2>
+  <p>Während des Fokus wächst in der Mitte eine Pflanze – je weiter die Session,
+     desto größer. Verlässt du die App bzw. den Tab während des Fokus, läuft der
+     Timer <strong>weiter</strong> (du verlierst keine Zeit) – als sanfter Hinweis
+     verblasst die Pflanze aber ein wenig. Brichst du den Fokus dagegen per
+     Zurücksetzen ganz ab, <strong>verwelkt</strong> sie. Ein vollständig
+     abgeschlossener Fokus lässt sie wieder satt grün werden. Die Pflanzenart
+     (Wiese, Blume, Setzling) wählst du in den Einstellungen.</p>
+
+  <h2 id="aufgaben">Aufgaben</h2>
+  <ul>
+    <li>Lege im Reiter <strong>Aufgaben</strong> Aufgaben an und schätze, wie
+        viele Pomodoros sie brauchen.</li>
+    <li>Tippe auf die Aufgabenzeile über dem Timer, um die <strong>aktive
+        Aufgabe</strong> zu wählen. Abgeschlossene Fokus-Blöcke werden ihr
+        gutgeschrieben.</li>
+    <li>Erledigte Aufgaben lassen sich abhaken (Kreis links).</li>
+    <li><strong>Löschen:</strong> über das <strong>⋯-Menü</strong> rechts an der
+        Aufgabe (dort auch „Bearbeiten") oder durch <strong>Wischen nach links</strong>.</li>
+  </ul>
+
+  <h2 id="statistik">Statistik, Tagesziel &amp; Serie</h2>
+  <p>Der Reiter <strong>Statistik</strong> zeigt heutige und wöchentliche
+     Pomodoros und Fokuszeit sowie ein Balkendiagramm der letzten 7 Tage.</p>
+  <h3>Tagesziel</h3>
+  <p>Lege in den Einstellungen fest, wie viele Pomodoros du pro Tag schaffen
+     willst (Standard 8). Der Fortschritt <code>erledigt / Ziel</code> wird oben
+     in der Statistik angezeigt.</p>
+  <h3>Serie (Streak)</h3>
+  <p>Die <strong>Serie</strong> zählt aufeinanderfolgende Tage, an denen du dein
+     Tagesziel erreicht hast. Ist das heutige Ziel noch offen, bleibt die Serie
+     bis zum Ende des Tages aktiv (Karenz). Ein Tag ohne erreichtes Ziel setzt
+     die Serie zurück.</p>
+
+  <h2 id="einstellungen">Einstellungen</h2>
+  <ul>
+    <li><strong>Dauer</strong> – Länge von Fokus, kurzer und langer Pause sowie
+        nach wie vielen Runden die lange Pause kommt.</li>
+    <li><strong>Tagesziel</strong> – Ziel-Pomodoros pro Tag für die Serie.</li>
+    <li><strong>Darstellung</strong> – Theme, Hell/Dunkel/System, Sprache.</li>
+    <li><strong>Fokus-Pflanze</strong> – Wiese, Blume oder Setzling.</li>
+    <li><strong>Automatik</strong> – Pausen bzw. Fokus automatisch starten.</li>
+    <li><strong>Benachrichtigungen</strong> – Hinweis bei jedem Phasenwechsel
+        (im Browser nach Erlaubnis).</li>
+  </ul>
+
+  <h2 id="plattformen">Web- &amp; Desktop-Version</h2>
+  <p>Taktwerk gibt es außer als Android-App auch als <strong>Web-App</strong> –
+     gleiche Funktionen, direkt im Browser, ohne App-Store. Nach dem ersten
+     Besuch funktioniert sie auch offline.</p>
+  <ul>
+    <li><strong>Im Browser nutzen:</strong> die Taktwerk-Web-Adresse öffnen –
+        fertig, keine Installation nötig.</li>
+    <li><strong>Als Desktop-App installieren:</strong> in Chrome oder Edge auf das
+        Installations-Symbol rechts in der Adressleiste klicken (oder Menü ⋮ →
+        „Taktwerk installieren"). Die App bekommt ein eigenes Fenster und einen
+        Eintrag im Startmenü. Firefox am Desktop bietet keine Installation an –
+        dort läuft Taktwerk ganz normal im Tab.</li>
+    <li><strong>Am Handy aus dem Browser:</strong> Chrome → Menü ⋮ →
+        „App installieren"; Firefox → „Zum Startbildschirm hinzufügen";
+        iPhone/iPad: Safari → Teilen → „Zum Home-Bildschirm".</li>
+  </ul>
+  <p><strong>Hinweis:</strong> Deine Daten bleiben lokal <em>auf dem jeweiligen
+     Gerät</em> – Web- und Android-Version teilen sich nichts automatisch. Zum
+     Übertragen nutzt du Backup-Export/-Import in den Einstellungen.</p>
+
+  <h2 id="tipps">Tipps</h2>
+  <div class="card tip">
+    <ul>
+      <li>Wähle vor dem Start eine Aufgabe – so weißt du, woran du arbeitest.</li>
+      <li>Aktiviere „Bildschirm anlassen", damit dich der Sperrbildschirm im Fokus nicht stört.</li>
+      <li>Passe die Dauern an deine Aufgabe an – 25/5 ist nur der Startwert.</li>
+      <li>Ein realistisches Tagesziel hält die Serie am Leben und motiviert.</li>
+    </ul>
+  </div>
+
+  <footer>Taktwerk · Alle Daten bleiben lokal auf deinem Gerät.</footer>
+</div>
+</body>
+</html>
